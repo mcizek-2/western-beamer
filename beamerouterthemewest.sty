@@ -1,0 +1,18 @@
+\mode<presentation>
+
+% Frame title
+\providecommand\insertframetitle{}
+\setbeamertemplate{frametitle}{}
+
+\setbeamertemplate{footline}{%
+\usebeamerfont{structure}
+	\begin{tikzpicture}	
+\fill[color=westernpurple] (0,0) rectangle(\the\paperwidth,0.8);
+\node(P) at (12.3,0.4) {\textcolor{white}{\insertframenumber}};
+\node(T) at (6,0.4){\textcolor{white}{\insertframetitle}};
+\node(L) at (0.5,0.42){\includegraphics[scale=0.30]{logo.png}};
+
+\end{tikzpicture}}
+
+
+\mode<all>
